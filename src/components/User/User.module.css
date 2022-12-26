@@ -1,0 +1,102 @@
+.TweetCard {
+  width: 454px;
+  min-height: 547px;
+  text-align: center;
+  box-shadow: -3px 8px 24px rgba(0, 0, 0, 0.23);
+  border-radius: 24px;
+  background-image: url('../../images/bg-img.png'),
+    linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
+  background-repeat: no-repeat;
+  background-position: 52px 34px, center center;
+}
+
+.Logo {
+  margin: 24px 0 0 24px;
+  width: 88px;
+}
+
+.User {
+  position: relative;
+  top: 159px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.Line {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #ebd8ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #ae7be3,
+    inset 0px 4px 3px #fbf8ff;
+}
+
+.UserAvatar {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 32px;
+  border-radius: 50%;
+  background: #ebd8ff;
+  box-shadow: 0px 5.11111px 5.11111px rgba(0, 0, 0, 0.06),
+    inset 0px -2.55556px 5.11111px #ae7be3,
+    inset 0px 5.11111px 3.83333px #fbf8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserPicture {
+  background: #5736a3;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.UserTweets,
+.UserFollowers {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #ebd8ff;
+}
+
+.Btn {
+  background: #ebd8ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  width: 226px;
+  height: 56px;
+  border: none;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.Btn:hover,
+.Btn:focus {
+  box-shadow: 0px 4px 4px rgba(237, 225, 10, 0.25);
+  transform: scale(1.02);
+}
+
+.Active {
+  composes: Btn;
+  background-color: #5cd3a8;
+}
